@@ -1,0 +1,23 @@
+{
+    "name": "workout-tracker",
+    "version": "1.0.0",
+    "description": "This application tracks workouts using a Mongo database with a Mongoose Schema and handles routes with Express.",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "watch": "nodemon server.js",
+        "seed": "node seeders/seed.js",
+        "build": "npm run build",
+        "heroku-postbuild": "echo Skip build on Heroku"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "8.2.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.11.1",
+        "morgan": "^1.10.0"
+    },
+    "heroku-run-build-script": true
+}
